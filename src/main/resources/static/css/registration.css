@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(0, 0, 0, 0.2) url("/img/bk.jpg");
+    background-size: 40em;
+}
+.signup{
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #081d09;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.signup h1{
+    color: rgb(213, 245, 98);
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.signup input[type = "text"], .signup input[type = "password"], .signup input[type = "email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    border: 3px solid #3498db;
+    padding: 15px 10px;
+    width: 150px;
+    outline: none;
+    color: rgb(207, 228, 25);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.signup input[type = "text"]:focus, .signup input[type = "password"]:focus, .signup input[type = "email"]:focus{
+    width: 200px;
+    border-color: #2ecc71;
+}
+.signup h3 {
+    color: rgb(17, 153, 101);
+}
+.signup input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 12px 10px;
+    width: 115px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.signup input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+.back {
+    padding: 14px 10px;
+    color: wheat;
+}
