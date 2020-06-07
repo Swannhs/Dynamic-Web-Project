@@ -27,8 +27,13 @@ public class HomeController {
 	public String login(){
 		return "login";
 	}
-	@RequestMapping("signup")
+	@RequestMapping("/signup")
 	public String registration(){
+		return "registration";
+	}
+
+	@RequestMapping("/post")
+	public String post(){
 		return "registration";
 	}
 }
