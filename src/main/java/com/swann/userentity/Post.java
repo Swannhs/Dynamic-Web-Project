@@ -1,13 +1,20 @@
 package com.swann.userentity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import com.sun.xml.bind.v2.model.core.ID;
+
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
 @Entity
-public class UserPost extends UserEntity<ID> {
+public class Post extends UserEntity<ID> {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
 	@Column(name = "title", length = 100, nullable = false)
 	private String title;
 
@@ -18,11 +25,11 @@ public class UserPost extends UserEntity<ID> {
 	@ManyToOne
 	private User user;
 
-	public UserPost() {
+	public Post() {
 
 	}
 
-	public UserPost(User user, String title, String post) {
+	public Post(User user, String title, String post) {
 		this.user = user;
 		this.title = title;
 		this.post = post;
@@ -59,6 +66,6 @@ public class UserPost extends UserEntity<ID> {
 
 	@Override
 	public Long getId() {
-		return null;
+		return id;
 	}
 }

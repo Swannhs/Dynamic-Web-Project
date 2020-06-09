@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    background: rgba(0, 0, 0, 0.2) url("/bk.jpg");
+    background: rgba(0, 0, 0, 0.2) url("/img/bk.jpg");
     background-size: 40em;
 }
 .box{

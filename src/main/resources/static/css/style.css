@@ -2,14 +2,14 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
-
 h1 {
   padding: 8px;
-  background: rgba(255, 0, 0, 0.8);
+  background: rgba(43, 14, 204, 0.8);
   border-radius: 8px;
   margin: 0;
   font-size: 64px;
   font-family: "Roboto Slab", serif;
+  color: rgb(223, 236, 38);
 }
 
 p {
@@ -96,7 +96,7 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-  color: red;
+  color: rgb(29, 185, 29);
 }
 
 nav ul {
@@ -109,7 +109,7 @@ nav ul {
 }
 
 .active {
-  color: #f783ae;
+  color: #12a837;
 }
 
 #logo-img {
@@ -149,7 +149,7 @@ nav ul {
 }
 
 #search-icon:hover {
-  color: red;
+  color: rgb(61, 199, 102);
 }
 
 /* Slideout Menu */
@@ -210,7 +210,7 @@ section {
 
 .section-heading:hover {
   padding: 4px 48px;
-  background: red;
+  background: rgb(27, 197, 41);
 }
 
 /* Section Source */
@@ -265,7 +265,7 @@ section {
 }
 
 .btn-readmore:hover {
-  background: red;
+  background: rgb(45, 16, 207);
   text-decoration: none;
   padding: 8px 64px 8px 24px;
   color: white;

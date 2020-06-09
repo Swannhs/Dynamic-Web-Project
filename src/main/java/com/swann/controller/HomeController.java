@@ -14,26 +14,23 @@ public class HomeController {
 	public String index(){
 		return "index";
 	}
-	@RequestMapping("/blogslist")
-	public String blogslist(){
-		return "blogslist";
-	}
 
 	@RequestMapping("/about")
 	public String about(){
 		return "about";
 	}
+
 	@RequestMapping("/login")
 	public String login(){
 		return "login";
 	}
+
 	@RequestMapping("/signup")
 	public String registration(){
 		return "registration";
 	}
-
 	@RequestMapping("/post")
 	public String post(){
-		return "registration";
+		return "post";
 	}
 }
