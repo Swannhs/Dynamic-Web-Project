@@ -29,6 +29,10 @@ public class HomeController {
 	public String registration(){
 		return "registration";
 	}
+	@RequestMapping("/profile")
+	public String profile(){
+		return "profile";
+	}
 	@RequestMapping("/post")
 	public String post(){
 		return "post";
