@@ -1,5 +1,8 @@
 package com.swann.userentity;
 
+import lombok.Data;
+import lombok.ToString;
+
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -9,7 +12,9 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Version;
 
 @MappedSuperclass
-public abstract class UserEntity<ID> {
+@ToString
+public @Data
+abstract class UserEntity<ID> {
 
     @Version
     private Long version;
@@ -22,25 +27,6 @@ public abstract class UserEntity<ID> {
 
     public abstract Long getId();
 
-    public Long getVersion() {
-        return version;
-    }
-
-    public void setVersion(Long version) {
-        this.version = version;
-    }
-
-    public Date getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public Date getLastModifiedDate() {
-        return lastModifiedDate;
-    }
 
     public void setLastModifiedDate(Date lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;

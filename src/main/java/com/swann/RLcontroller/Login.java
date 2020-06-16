@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 
 import com.swann.repository.UserRepository;
 import com.swann.userentity.User;
 
-@Controller
+@RestController
+@RequestMapping("/cheaklogin")
 public class Login {
 	@Autowired
 	private UserRepository repository;
@@ -21,7 +23,7 @@ public class Login {
 	@Autowired
 	private UserDRepository dRepository;
 
-	@RequestMapping("/cheaklogin")
+	@RequestMapping("/")
 	public String login(WebRequest request, Model model) {
 		try {
 			User obj = repository.findByName(request.getParameter("username"));

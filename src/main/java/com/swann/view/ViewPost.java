@@ -20,6 +20,7 @@ public class ViewPost {
             model.addAttribute("date", posts.getCreatedDate());
             model.addAttribute("title", posts.getTitle());
             model.addAttribute("post",posts.getPost());
+            System.out.println(array);
         }
         return "blogslist";
     }
